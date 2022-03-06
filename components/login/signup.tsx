@@ -1,14 +1,15 @@
 import { TextInput, SafeAreaView, TouchableOpacity, Text, StyleSheet, Image, ImageBackground, TouchableWithoutFeedback, Keyboard} from "react-native";
 import { Background, DaterLogo } from "../../assets";
 
-export default function Signin() {
-    return(
+export default function Signup() {
+    return (
         <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
             <SafeAreaView style={styles.container}>
                     <Image style={styles.background} source={Background}></Image>
                     <Image style={styles.logo} source={DaterLogo}></Image>
                     <SafeAreaView style={styles.inputContainer}>
                         <TextInput placeholder="아이디를 입력하세요" style={styles.input}></TextInput>
+                        <TextInput placeholder="이름을 입력하세요" style={styles.input}></TextInput>
                         <TextInput placeholder="비밀번호를 입력하세요" style={styles.input}></TextInput>
                         <TouchableOpacity style={styles.signupContainer}>
                             <Text style={styles.signup}>아직 계정이 없으신가요?</Text>
